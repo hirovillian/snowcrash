@@ -48,7 +48,6 @@ class WebAppTest extends TestCase
     {
         $name = "../../../../../../../etc/passwd";
         $contents = "foobar";
-	main("create", "passwd", "Blah");
         $this->assertFalse(main("view", $name, $contents));
     }
 }

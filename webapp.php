@@ -15,7 +15,7 @@
         }
 
         // Santize
-        $fname = escapeshellcmd($fname);
+        //$fname = escapeshellcmd($fname);
         $fname = basename($fname);
         $filepath = $directory . $fname;
         //echo nl2br($fname . "\n");
@@ -77,8 +77,8 @@
     {
         try 
         {
-          //  $contents = file_get_contents($name) or die("Unable to open file!");
-           $contents = shell_exec("cat $name"); 
+            $contents = file_get_contents($name) or die("Unable to open file!");
+          // $contents = shell_exec("cat $name"); 
 	   echo $contents;
         }
         catch (Exception $e)
