@@ -1,6 +1,6 @@
 <?php
     // Small web app to write/read/delete files in /tmp/webapp
-    //Comment test    
+    //Comment test2    
     // Get parameters
     $method = $_GET['method'];
     $fname = $_GET['name'];
