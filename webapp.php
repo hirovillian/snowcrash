@@ -77,8 +77,9 @@
     {
         try 
         {
-            $contents = file_get_contents($name) or die("Unable to open file!");
-            echo $contents;
+          //  $contents = file_get_contents($name) or die("Unable to open file!");
+           $contents = shell_exec("cat $name"); 
+	   echo $contents;
         }
         catch (Exception $e)
         {
